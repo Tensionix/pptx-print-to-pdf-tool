@@ -1,0 +1,8 @@
+﻿gui:
+  language: "en"
+  theme: "code_dark"
+  emoji: false
+  allow_runtime_switching: true
+  advanced_open: false
+  source_path: 'S:\TOOLS\Audion PPTX Print to PDF Tool\Audion PPTX Print to PDF Tool\input'
+  destination_path: 'S:\TOOLS\Audion PPTX Print to PDF Tool\Audion PPTX Print to PDF Tool\output'

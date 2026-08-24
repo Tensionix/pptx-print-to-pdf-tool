@@ -1,0 +1,366 @@
+/* Audion GUI stylesheet.
+ *
+ * Order here is load-bearing: of two equally specific rules the later one wins.
+ * Themes therefore recur instead of being grouped — a rule sits where the cascade
+ * needs it, not next to its relatives. The banners mark each run so the sequence
+ * can be read. Do not sort them.
+ *
+ * Move a rule only after checking that nothing it crosses sets the same property
+ * at the same specificity on the same element.
+ */
+
+/* ========================================================================
+   RESPONSIVE
+   ======================================================================== */
+            --audion-bg: var(--color-background-tertiary);
+            --audion-header-bg: var(--color-background-primary);
+            --audion-header-text: var(--color-text-primary);
+            --audion-panel-bg: var(--color-background-secondary);
+            --audion-terminal-bg: var(--color-background-tertiary);
+            --audion-terminal-background: var(--audion-terminal-bg);
+            --audion-block-background: color-mix(in srgb, var(--audion-panel-bg) 74%, var(--audion-terminal-bg) 26%);
+            --audion-text: var(--color-text-primary);
+            --audion-secondary-text: var(--color-text-secondary);
+            --audion-muted-text: var(--color-text-tertiary);
+            --audion-accent: var(--color-accent-primary);
+            --audion-button-text: var(--color-accent-primary);
+            --audion-button-hover-bg: var(--color-background-primary);
+            --audion-button-hover-background: var(--audion-button-hover-bg);
+            --audion-panel-border: color-mix(in srgb, var(--color-border-tertiary) 62%, transparent 38%);
+            --audion-divider: color-mix(in srgb, var(--color-border-tertiary) 48%, transparent 52%);
+            --audion-input-border: color-mix(in srgb, var(--color-border-secondary) 54%, transparent 46%);
+            --audion-input-border-hover: color-mix(in srgb, var(--color-border-secondary) 72%, transparent 28%);
+            --audion-input-border-focus: color-mix(in srgb, var(--color-accent-primary) 78%, var(--color-border-secondary) 22%);
+            --audion-button-hover-border: var(--audion-input-border-hover);
+            --audion-border: var(--audion-panel-border);
+            --audion-strong-border: var(--audion-input-border-hover);
+            --audion-gui-font: var(--font-sans);
+            --audion-terminal-font: var(--font-mono);
+          }
+          html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden !important;
+            background: var(--audion-bg);
+            color: var(--audion-text);
+            font-family: var(--audion-gui-font);
+          }
+          .nicegui-content {
+            height: 100vh !important;
+            padding: 0 !important;
+            overflow: hidden !important;
+            background: var(--audion-bg) !important;
+          }
+          .q-layout,
+          .q-page,
+          .nicegui-content {
+            background: var(--audion-bg) !important;
+            color: var(--audion-text) !important;
+          }
+          .audion-header {
+            background: var(--audion-header-bg) !important;
+            border-bottom: 1px solid var(--audion-divider);
+            color: var(--audion-header-text) !important;
+          }
+          .audion-header-controls {
+            align-items: center !important;
+            transform: translateY(-11px);
+          }
+          .audion-header-title {
+            transform: translateY(-11px);
+          }
+          .audion-theme-select {
+            width: 168px;
+            min-height: 32px !important;
+            height: 32px !important;
+          }
+          .audion-theme-select.q-field,
+          .audion-theme-select .q-field__inner {
+            min-height: 32px !important;
+            height: 32px !important;
+            padding-bottom: 0 !important;
+          }
+          .audion-theme-select .q-field__control {
+            min-height: 32px !important;
+            height: 32px !important;
+            background: transparent !important;
+            padding: 0 8px 0 14px !important;
+            border-radius: var(--border-radius-md) !important;
+          }
+          .audion-theme-select .q-field__marginal,
+          .audion-theme-select .q-field__native,
+          .audion-theme-select .q-field__append {
+            min-height: 32px !important;
+            height: 32px !important;
+            color: var(--audion-button-text) !important;
+            font-size: 13px !important;
+          }
+          .audion-theme-select .q-field__native {
+            align-items: center !important;
+            line-height: 32px !important;
+            padding: 0 0 1px 0 !important;
+          }
+          .audion-theme-select .q-field__control::before {
+            border-color: color-mix(in srgb, var(--audion-input-border) 72%, transparent 28%) !important;
+          }
+          .audion-theme-select .q-field__control::after {
+            border-color: transparent !important;
+            box-shadow: none !important;
+          }
+          .audion-theme-select.q-field--outlined:hover .q-field__control::before {
+            border-color: color-mix(in srgb, var(--audion-input-border) 88%, transparent 12%) !important;
+          }
+          .audion-theme-select .q-field__bottom {
+            display: none !important;
+          }
+          .audion-theme-select .q-field__append .q-icon {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            height: 100% !important;
+            line-height: 1 !important;
+            transform: translateY(-1px);
+          }
+          .audion-shell {
+            width: 100vw;
+            height: calc(100vh - 42px);
+            padding: 12px;
+            min-height: 0;
+            display: grid;
+            grid-template-columns: minmax(520px, 58%) minmax(360px, 42%);
+            gap: 12px;
+            overflow: hidden;
+          }
+          .audion-pane {
+            min-height: 0;
+            overflow: hidden;
+          }
+          .audion-scroll {
+            min-height: 0;
+            overflow: auto;
+            padding-right: 12px;
+            scrollbar-gutter: stable;
+            display: flex;
+            flex-direction: column;
+          }
+          .audion-scroll > * {
+            max-width: 100%;
+          }
+          .audion-right {
+            min-height: 0;
+            height: 100%;
+            overflow: hidden;
+            display: grid;
+            grid-template-rows: auto auto minmax(0, 1fr);
+            gap: 10px;
+          }
+          .audion-panel,
+          .audion-terminal-panel {
+            background: var(--audion-panel-bg);
+            border: 1px solid var(--audion-border);
+            border-radius: 8px;
+          }
+          .audion-action {
+            color: var(--audion-accent) !important;
+            background: transparent !important;
+          }
+          .audion-action:hover {
+            border-color: var(--audion-strong-border) !important;
+            background: rgba(127, 127, 127, 0.08) !important;
+          }
+          .audion-confirm-button {
+            min-height: 40px !important;
+            height: 40px !important;
+            padding-left: 14px !important;
+            padding-right: 14px !important;
+            border: 1px solid transparent !important;
+          }
+          .audion-confirm-button .q-btn__content {
+            padding-left: 2px;
+            padding-right: 2px;
+            flex-wrap: nowrap !important;
+            white-space: nowrap;
+          }
+          .audion-button {
+            min-height: 30px !important;
+            height: 30px !important;
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+            color: var(--audion-button-text) !important;
+            background: transparent !important;
+            border: 1px solid transparent !important;
+          }
+          .audion-button:hover {
+            background: var(--audion-button-hover-bg) !important;
+            border-color: var(--audion-button-hover-border) !important;
+          }
+          .audion-button .q-btn__content {
+            width: 100%;
+            flex-wrap: nowrap !important;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 12px;
+            line-height: 1;
+          }
+          .audion-operation-row {
+            display: grid;
+            grid-template-columns: 270px minmax(0, 1fr);
+            gap: 10px;
+            align-items: center;
+            min-height: 48px;
+            border-bottom: 1px solid var(--audion-border);
+          }
+          .audion-operation-row:last-child {
+            border-bottom: none;
+          }
+          .audion-operation-button .q-btn__content {
+            justify-content: flex-start !important;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+            white-space: nowrap !important;
+          }
+          .audion-operation-description {
+            color: var(--audion-secondary-text);
+            font-size: 13px;
+            line-height: 1.25;
+          }
+          .audion-status-grid {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 8px;
+          }
+          .audion-status-card {
+            min-height: 58px;
+            border: 1px solid var(--audion-border);
+            border-radius: 6px;
+            padding: 8px 10px;
+            background: color-mix(in srgb, var(--audion-panel-bg) 82%, var(--audion-terminal-bg) 18%);
+          }
+          .audion-terminal-panel {
+            min-height: 0;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+          }
+          .audion-terminal {
+            flex: 1 1 auto;
+            min-height: 0;
+            height: 100% !important;
+            background: var(--audion-terminal-bg) !important;
+            color: var(--audion-secondary-text) !important;
+            border: 1px solid var(--audion-input-border);
+            border-radius: 6px;
+            box-sizing: border-box;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 8px 10px;
+            user-select: text;
+          }
+          .audion-terminal-pre {
+            box-sizing: border-box;
+            min-height: 100%;
+            max-width: 100%;
+            width: 100%;
+            margin: 0;
+            color: var(--audion-secondary-text);
+            font-family: var(--audion-terminal-font);
+            font-size: 12px !important;
+            line-height: 1.35 !important;
+            tab-size: 4;
+            white-space: pre-wrap;
+            overflow-wrap: anywhere;
+            word-break: break-word;
+            user-select: text;
+          }
+          .audion-terminal-line {
+            display: block;
+            min-height: 1.35em;
+            max-width: 100%;
+            padding-left: 5ch;
+            text-indent: -5ch;
+            white-space: pre-wrap;
+            overflow-wrap: anywhere;
+            word-break: break-word;
+            user-select: text;
+          }
+          .audion-terminal-line-table {
+            /* A table row keeps its columns: no wrapping, and none of the hanging
+               indent that a continuation line would otherwise be shifted by. The
+               panel scrolls sideways only while such a line is wider than it. */
+            max-width: none;
+            padding-left: 0;
+            text-indent: 0;
+            white-space: pre;
+            overflow-wrap: normal;
+            word-break: normal;
+          }
+          .audion-terminal-footer {
+            min-height: 26px;
+            border-top: 1px solid var(--audion-border);
+          }
+          .audion-step-row {
+            min-height: 32px;
+            line-height: 1.05;
+          }
+          .audion-step-num {
+            width: 24px;
+            height: 24px;
+            border-radius: 999px;
+            text-align: center;
+            line-height: 24px;
+            background: rgba(101, 165, 247, 0.25);
+            color: var(--audion-text);
+            font-weight: 800;
+          }
+          .audion-radio .q-radio__label,
+          .audion-checkbox-item .q-checkbox__label {
+            color: var(--audion-text) !important;
+          }
+          .audion-checkbox-item,
+          .audion-radio .q-radio {
+            min-height: 30px !important;
+            padding: 2px 9px !important;
+            border: 1px solid color-mix(in srgb, var(--audion-accent) 34%, var(--audion-border) 66%);
+            background: color-mix(in srgb, var(--audion-terminal-bg) 82%, var(--audion-panel-bg) 18%);
+          }
+          .audion-checkbox-item {
+            border-radius: 7px;
+          }
+          .audion-radio .q-radio {
+            border-radius: 999px;
+          }
+          .audion-checkbox-item[aria-checked="true"],
+          .audion-radio .q-radio[aria-checked="true"] {
+            border-color: color-mix(in srgb, var(--audion-accent) 72%, white 28%);
+            background: color-mix(in srgb, var(--audion-accent) 13%, var(--audion-terminal-bg) 87%);
+          }
+          .audion-radio {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            gap: 8px 10px !important;
+            align-items: center;
+          }
+          .audion-radio .q-radio {
+            margin-right: 0 !important;
+          }
+          .audion-select {
+            min-width: 210px;
+          }
+          @media (max-width: 980px) {
+            html, body { overflow: auto !important; }
+/* ========================================================================
+   BASE
+   ======================================================================== */
+            .nicegui-content { height: auto !important; overflow: visible !important; }
+            .audion-shell {
+              grid-template-columns: minmax(0, 1fr);
+              height: auto;
+              min-height: calc(100vh - 42px);
+              overflow: visible;
+            }
+            .audion-scroll { overflow: visible; padding-right: 0; }
+            .audion-right { min-height: 640px; }
+          }

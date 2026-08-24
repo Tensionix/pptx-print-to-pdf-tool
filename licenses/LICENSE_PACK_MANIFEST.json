@@ -1,0 +1,36 @@
+{
+  "schema": "audion.build_licenses.pack_manifest.v1",
+  "generated_utc": "2026-08-24T17:45:28Z",
+  "run_id": "20260824T174521Z_audion-pptx-print-to-pdf-tool_399e76c4",
+  "project_id": "audion-pptx-print-to-pdf-tool",
+  "project_name": "Audion PPTX Print to PDF Tool",
+  "scan_root": "S:\\Release\\Audion PPTX Print to PDF Tool",
+  "output_dir": "S:\\Release\\Audion PPTX Print to PDF Tool\\licenses",
+  "files": [
+    {
+      "name": "THIRD_PARTY_NOTICES.txt",
+      "sha256": "9437e7ee2132ed08aac2a793333a0e135c9591bb48441eaae5f8c6469afed29f",
+      "size": 433735
+    },
+    {
+      "name": "SOURCE_CODE_AVAILABILITY.txt",
+      "sha256": "9e9bcee0682ee679788836c580321184bcf5499dedeb18275426ec829e4e6876",
+      "size": 1240
+    },
+    {
+      "name": "COMPONENTS.json",
+      "sha256": "aeb7c330b3f9c76aa744df8c6ab8fdab611053c1468dd8090c5a77bbb306df44",
+      "size": 130726
+    },
+    {
+      "name": "_records.json",
+      "sha256": "65780c94d7508003d6d37a488181a52b9ecc2289991e54732260bede1d193a12",
+      "size": 32001
+    },
+    {
+      "name": "LICENSE_SCAN_REPORT.md",
+      "sha256": "6216fcba26ef7e6fe13dd0f9b1f59bbe1bbe94d4788f4426289e6493da950654",
+      "size": 5037
+    }
+  ]
+}

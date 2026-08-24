@@ -1,0 +1,20 @@
+{
+  "pdf_printer_name": "Microsoft Print to PDF",
+  "paper_size": "Legal",
+  "landscape": true,
+  "save_dialog_timeout_sec": 20,
+  "save_dialog_title_patterns": [
+    "Save Print Output As",
+    "Save Print Output",
+    "Сохранение результата печати как",
+    "Сохранение результата печати",
+    "Печать в файл"
+  ],
+  "crop": {
+    "default_mode": "exact",
+    "exact_target_ratio": "16:9",
+    "fixed_mm_each_side": 8.0,
+    "output_suffix_exact": "_16x9",
+    "output_suffix_8mm": "_crop8mm"
+  }
+}
