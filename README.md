@@ -8,7 +8,7 @@
 - [Direct download](https://audion.dev/get/pptx-print-to-pdf-tool/1.3.1/Audion_PPTX_Print_to_PDF_Tool_v1.3.1_Full.zip) — unmetered, no rate limits
 - [Project page](https://audion.dev/downloads/pptx-print-to-pdf-tool) — every version and how to install
 
-![The program window](docs/screenshot.png)
+<img src="docs/screenshot.png" alt="The program window" width="560">
 
 `SHA-256: a68186db33912b0317361b345960d217706aa1a6aa35db61a1e587cb31594e57`
 
