@@ -1,14 +1,19 @@
 # Audion PPTX Print to PDF Tool
 
 <!-- audion:release -->
-[![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0b6db8?style=flat-square&logo=windows&logoColor=white)](https://audion.dev/downloads/pptx-print-to-pdf-tool) [![Release](https://img.shields.io/github/v/release/Tensionix/pptx-print-to-pdf-tool?style=flat-square&label=release&color=e08a63)](https://github.com/Tensionix/pptx-print-to-pdf-tool/releases/latest) [![Downloads](https://img.shields.io/github/downloads/Tensionix/pptx-print-to-pdf-tool/total?style=flat-square&label=downloads&color=5fd08a)](https://github.com/Tensionix/pptx-print-to-pdf-tool/releases) [![License](https://img.shields.io/github/license/Tensionix/pptx-print-to-pdf-tool?style=flat-square&color=5fd08a&logo=apache&logoColor=white&cacheSeconds=3600)](https://github.com/Tensionix/pptx-print-to-pdf-tool/blob/main/LICENSE)
+<p align="center">
+  <a href="https://audion.dev/downloads/pptx-print-to-pdf-tool"><img alt="Windows" src="https://img.shields.io/badge/Windows-10%20%7C%2011-0b6db8?style=flat-square&logo=windows&logoColor=white"></a>
+  <a href="https://github.com/Tensionix/pptx-print-to-pdf-tool/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/Tensionix/pptx-print-to-pdf-tool?style=flat-square&label=release&color=e08a63"></a>
+  <a href="https://github.com/Tensionix/pptx-print-to-pdf-tool/releases"><img alt="Downloads" src="https://img.shields.io/github/downloads/Tensionix/pptx-print-to-pdf-tool/total?style=flat-square&label=downloads&color=5fd08a"></a>
+  <a href="https://github.com/Tensionix/pptx-print-to-pdf-tool/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/Tensionix/pptx-print-to-pdf-tool?style=flat-square&color=5fd08a&logo=apache&logoColor=white&cacheSeconds=3600"></a>
+</p>
 
 **Version 1.3.1** · 2026-08-25 · 78.5 MB
 
 - [Direct download](https://audion.dev/get/pptx-print-to-pdf-tool/1.3.1/Audion_PPTX_Print_to_PDF_Tool_v1.3.1_Full.zip) — unmetered, no rate limits
 - [Project page](https://audion.dev/downloads/pptx-print-to-pdf-tool) — every version and how to install
 
-<img src="docs/screenshot.png" alt="The program window" width="560">
+<p align="center"><img src="docs/screenshot.png" alt="The program window" width="560"></p>
 
 `SHA-256: a68186db33912b0317361b345960d217706aa1a6aa35db61a1e587cb31594e57`
 
