@@ -8,85 +8,59 @@
   <a href="https://github.com/Tensionix/pptx-print-to-pdf-tool/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/Tensionix/pptx-print-to-pdf-tool?style=flat-square&color=5fd08a&logo=apache&logoColor=white&cacheSeconds=3600"></a>
 </p>
 
-**Version 1.3.2** · 2026-09-01 · 3.4 MB
+**Version 1.3.2** · 2026-09-02 · 78.2 MB
 
-- [Direct download](https://dl.audion.dev/pptx-print-to-pdf-tool/1.3.2/Audion_PPTX_Print_to_PDF_Tool_v1.3.2.zip) — unmetered, no rate limits
+- [Direct download](https://audion.dev/get/pptx-print-to-pdf-tool/1.3.2/Audion_PPTX_Print_to_PDF_Tool_v1.3.2_Full.zip) — unmetered, no rate limits
 - [Project page](https://audion.dev/downloads/pptx-print-to-pdf-tool) — every version and how to install
 
 <p align="center"><img src="docs/screenshot.png" alt="The program window" width="560"></p>
 
-`SHA-256: 05753609a5866294749e30999b0e7033d34fea2d01c533ce537bfd62987f4f29`
+`SHA-256: 7e5549cc11060a1b3c22b4b7848da1d46506770969d868b6d26e57e6fda3223e`
 
 ---
 
 An **Audion** tool, published by [Tensionix](https://github.com/Tensionix).
 <!-- /audion:release -->
 
-Portable Windows workflow with a NiceGUI shell for batch-printing PowerPoint files through **Microsoft Print to PDF** and then cropping the saved PDFs in `output` to **16:9** or **A4/A3** proportions.
 
-## Main workflow
+[Русский](README_RU.md) · [User Guide](USER_GUIDE_EN.md)
 
-1. Run `launcher_gui.cmd` for the guided shell, or open it from `launcher_project.cmd` / `launcher_project_ru.cmd`.
-2. Prepare **Microsoft Print to PDF** as the default printer.
-3. Put `.pptx` or `.pptm` files into `input`.
-4. Start guided printing. For every Microsoft Print to PDF dialog, paste the full path from the clipboard and save the PDF.
-5. Return to the GUI and click `PDF SAVED` after each file.
-6. Optionally crop all PDFs in `output` to `16:9` or `A4/A3`, then restore the previous default printer.
+Batch printing of presentations through the "Microsoft Print to PDF" system
+printer, followed by cropping to the required format.
 
-## Canonical Workbench labels
+## Why It Exists
 
-The GUI uses the canonical shared Workbench. Its address row is named **Source / Target**, and its action bar uses the same labels in every project: **Source**, **Add file...**, **Target**, **Reset**, **Delete**, **List**.
+Exporting a presentation to PDF and printing it to PDF are **different things**,
+and the results differ. Printing goes through the printer driver: page settings,
+margins, and scaling all apply. Sometimes that is exactly the path required — for
+instance when the receiving side expects a document that has been through print.
 
-- **Source** accepts either a presentation folder or one `.pptx` / `.pptm` file.
-- **Target** selects the folder for saved and cropped PDFs.
-- The GUI and CLI/backend use the same selected routes.
-- **Reset** returns to project `input` / `output` and clears unpinned path history.
-- **Delete** is irreversible and asks for confirmation before clearing both routes.
+PowerPoint cannot batch-print. This program can.
 
-## Main launchers
+## The Order of Work
 
-- `launcher_gui.cmd` - guided GUI shell with themes, RU/EN switch, status cards, operation log, and child operation screens
-- `launcher_project.cmd` - English unified launcher with `FZF + CMD fallback`
-- `launcher_project_ru.cmd` - Russian mirror of the English launcher with translated UI only
+1. Make "Microsoft Print to PDF" the default printer.
+2. Put the presentations into the input folder.
+3. Run the printing.
+4. Crop the result to `16:9` or A4/A3.
 
-If `fzf.exe` is missing, the project launcher automatically falls back to the built-in `choice` menu.
+Cropping is separate from printing: printing produces the page as it is, and
+fitting to a format is done on the finished PDF.
 
-## Compatibility wrappers
+## Next
 
-The simple one-click wrappers are still available and call `run_action.cmd`:
+* [User Guide](USER_GUIDE_EN.md) — step by step.
 
-- `01_Enable_And_Set_Microsoft_Print_to_PDF_Default.cmd`
-- `03_Print_All_PPTX_From_Input.cmd`
-- `05_Crop_All_PDFs_From_Output_16x9_Exact.cmd`
-- `06_Crop_All_PDFs_From_Output_A4_A3.cmd`
-- `04_Restore_Previous_Default_Printer.cmd`
-- `09_Doctor.cmd`
+---
 
-## Service layer
+## Technical Reference
 
-- `builder_main.cmd` - template-owned builder entry point
-- `launcher_tools.cmd` - template-owned tools and release launcher
-- `install\` - build, install, verify, and release helpers
-- `system_core\license\` and `licenses\` - release licensing support layer
+### Requirements
 
-## Key folders
+An installed PowerPoint and the "Microsoft Print to PDF" system printer set as
+default. The program does not switch the printer for you: that is a system
+setting, and it should not be changed silently.
 
-- `input` - source PPTX/PPTM files
-- `output` - saved PDFs that will be cropped
-- `logs` - session logs
-- `state` - saved printer state
-- `config` - project settings
-- `report` - generated reports and GUI artifacts
-- `system_core` - PowerShell and Python helpers
-- `GitHub` - GitHub-facing project docs
-- `._runtime` - launcher temp files for the `FZF` menu path
+### Formats
 
-## Notes
-
-- The print step is guided, not silent. This keeps Microsoft Print to PDF and PowerPoint font rendering in control.
-- `--skip-existing` skips PDFs that are already present in `output`.
-- The GUI intentionally does not show toasts for simply opening standard folders.
-- The `FZF` temp scheme is split by language:
-  - `project_menu_en*`
-  - `project_menu_ru*`
-- In `CMD fallback` mode, `._runtime` may stay empty, which is expected.
+`.pptx` and `.pptm` are accepted.

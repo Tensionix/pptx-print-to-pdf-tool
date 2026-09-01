@@ -1,7 +1,7 @@
 {
   "schema": "audion.build_licenses.pack_manifest.v1",
-  "generated_utc": "2026-08-24T17:45:28Z",
-  "run_id": "20260824T174521Z_audion-pptx-print-to-pdf-tool_399e76c4",
+  "generated_utc": "2026-09-01T04:37:58Z",
+  "run_id": "20260901T043751Z_audion-pptx-print-to-pdf-tool_e8aa1c0d",
   "project_id": "audion-pptx-print-to-pdf-tool",
   "project_name": "Audion PPTX Print to PDF Tool",
   "scan_root": "S:\\Release\\Audion PPTX Print to PDF Tool",
@@ -9,28 +9,28 @@
   "files": [
     {
       "name": "THIRD_PARTY_NOTICES.txt",
-      "sha256": "9437e7ee2132ed08aac2a793333a0e135c9591bb48441eaae5f8c6469afed29f",
-      "size": 433735
+      "sha256": "e5e5d234d76ca6e4e94163c55ff3983300dc87cc3f2f398bc8eb4de117e4bfc8",
+      "size": 385322
     },
     {
       "name": "SOURCE_CODE_AVAILABILITY.txt",
-      "sha256": "9e9bcee0682ee679788836c580321184bcf5499dedeb18275426ec829e4e6876",
+      "sha256": "4c6378dbd119f00662fcd81cddcbef3ae2cbd1c27ce525a4b30045b47052436d",
       "size": 1240
     },
     {
       "name": "COMPONENTS.json",
-      "sha256": "aeb7c330b3f9c76aa744df8c6ab8fdab611053c1468dd8090c5a77bbb306df44",
-      "size": 130726
+      "sha256": "9f34426c2a0249a9605b20be9fd249ab8adc753f037121d102eacde849f9fad0",
+      "size": 121479
     },
     {
       "name": "_records.json",
-      "sha256": "65780c94d7508003d6d37a488181a52b9ecc2289991e54732260bede1d193a12",
-      "size": 32001
+      "sha256": "c305dcc59468f3bacffbfb8d837eb2184a46f4cc36c5aa03f3b15272667ed1d4",
+      "size": 30007
     },
     {
       "name": "LICENSE_SCAN_REPORT.md",
-      "sha256": "6216fcba26ef7e6fe13dd0f9b1f59bbe1bbe94d4788f4426289e6493da950654",
-      "size": 5037
+      "sha256": "115d3fca4173dceaf3ca06d0cb64815295e60b8fca456a218f94b9b74dfe7ba4",
+      "size": 5956
     }
   ]
 }
