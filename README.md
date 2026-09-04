@@ -23,7 +23,7 @@ An **Audion** tool, published by [Tensionix](https://github.com/Tensionix).
 <!-- /audion:release -->
 
 
-[Русский](docs/README_RU.md) · [User Guide](docs/USER_GUIDE_EN.md)
+[Русский](Docs/README_RU.md) · [User Guide](Docs/USER_GUIDE_EN.md)
 
 **Contents**
 
@@ -58,7 +58,7 @@ fitting to a format is done on the finished PDF.
 
 ## Next
 
-* [User Guide](docs/USER_GUIDE_EN.md) — step by step.
+* [User Guide](Docs/USER_GUIDE_EN.md) — step by step.
 
 ---
 
