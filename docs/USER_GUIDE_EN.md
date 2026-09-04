@@ -1,5 +1,15 @@
 # Audion PPTX Print to PDF Tool
 
+**Contents**
+
+- [Main workflow](#main-workflow)
+- [Canonical Workbench labels](#canonical-workbench-labels)
+- [Main launchers](#main-launchers)
+- [Compatibility wrappers](#compatibility-wrappers)
+- [Service layer](#service-layer)
+- [Key folders](#key-folders)
+- [Notes](#notes)
+
 Portable Windows workflow with a NiceGUI shell for batch-printing PowerPoint files through **Microsoft Print to PDF** and then cropping the saved PDFs in `output` to **16:9** or **A4/A3** proportions.
 
 ## Main workflow

@@ -2,6 +2,15 @@
 
 [Русский](README_RU.md) · [User Guide](USER_GUIDE_EN.md)
 
+**Contents**
+
+- [Why It Exists](#why-it-exists)
+- [The Order of Work](#the-order-of-work)
+- [Next](#next)
+- [Technical Reference](#technical-reference)
+  - [Requirements](#requirements)
+  - [Formats](#formats)
+
 Batch printing of presentations through the "Microsoft Print to PDF" system
 printer, followed by cropping to the required format.
 

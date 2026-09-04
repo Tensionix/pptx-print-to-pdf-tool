@@ -10,7 +10,7 @@
 
 **Version 1.3.2** · 2026-09-04 · 78.3 MB
 
-- [Direct download](https://dl.audion.dev/pptx-print-to-pdf-tool/1.3.2/Audion_PPTX_Print_to_PDF_Tool_v1.3.2_Full.zip) — unmetered, no rate limits
+- [Direct download](https://audion.dev/get/pptx-print-to-pdf-tool/1.3.2/Audion_PPTX_Print_to_PDF_Tool_v1.3.2_Full.zip) — unmetered, no rate limits
 - [Project page](https://audion.dev/downloads/pptx-print-to-pdf-tool) — every version and how to install
 
 <p align="center"><img src="docs/screenshot.png" alt="The program window" width="560"></p>
@@ -23,7 +23,16 @@ An **Audion** tool, published by [Tensionix](https://github.com/Tensionix).
 <!-- /audion:release -->
 
 
-[Русский](README_RU.md) · [User Guide](USER_GUIDE_EN.md)
+[Русский](Docs/README_RU.md) · [User Guide](Docs/USER_GUIDE_EN.md)
+
+**Contents**
+
+- [Why It Exists](#why-it-exists)
+- [The Order of Work](#the-order-of-work)
+- [Next](#next)
+- [Technical Reference](#technical-reference)
+  - [Requirements](#requirements)
+  - [Formats](#formats)
 
 Batch printing of presentations through the "Microsoft Print to PDF" system
 printer, followed by cropping to the required format.
@@ -49,7 +58,7 @@ fitting to a format is done on the finished PDF.
 
 ## Next
 
-* [User Guide](USER_GUIDE_EN.md) — step by step.
+* [User Guide](Docs/USER_GUIDE_EN.md) — step by step.
 
 ---
 
