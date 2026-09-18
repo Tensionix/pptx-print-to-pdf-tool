@@ -8,14 +8,14 @@
   <a href="https://github.com/Tensionix/pptx-print-to-pdf-tool/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/Tensionix/pptx-print-to-pdf-tool?style=flat-square&color=5fd08a&logo=apache&logoColor=white&cacheSeconds=3600"></a>
 </p>
 
-**Version 1.3.3** · 2026-09-18 · 78.7 MB
+**Version 1.3.3** · 2026-09-18 · 3.5 MB
 
-- [Direct download](https://dl.audion.dev/pptx-print-to-pdf-tool/1.3.3/Audion_PPTX_Print_to_PDF_Tool_v1.3.3_Full.zip) — unmetered, no rate limits
+- [Direct download](https://dl.audion.dev/pptx-print-to-pdf-tool/1.3.3/Audion_PPTX_Print_to_PDF_Tool_v1.3.3.zip) — unmetered, no rate limits
 - [Project page](https://audion.dev/downloads/pptx-print-to-pdf-tool) — every version and how to install
 
 <p align="center"><img src="docs/screenshot.png" alt="The program window" width="560"></p>
 
-`SHA-256: c5ceb6cc4a0ccd08065b7611c2c81319c1f7b39214046f6dcec226258fb99d1e`
+`SHA-256: 4f77b14e4bb184183852c5f5f8be6fe4b77674d51eb48e05fd0ca741145ad076`
 
 ---
 
